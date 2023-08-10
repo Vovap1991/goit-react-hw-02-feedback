@@ -1,5 +1,3 @@
-import React, { Component } from 'react';
-
 import { FeedbackWrapper, FeedbackTitle, FeedbackBtn } from './Feedback.styled';
 
 export const Feedback = ({ onIncrement }) => {

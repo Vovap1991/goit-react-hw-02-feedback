@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const FeedbackWrapper = styled.div`
   margin-left: 50px;
+  margin-bottom: 50px;
 `;
 
 export const FeedbackTitle = styled.h2`

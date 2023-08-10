@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Feedback } from './Feedback/Feedback';
+import { Statistics } from './Statistics/Statistics';
 
 export class App extends Component {
   state = {
@@ -20,6 +21,7 @@ export class App extends Component {
     return (
       <div>
         <Feedback onIncrement={this.getFeedback} />
+        <Statistics clicks={this.state} />
       </div>
     );
   }
