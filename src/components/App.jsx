@@ -22,11 +22,23 @@ export class App extends Component {
     return good + neutral + bad;
   };
 
+  countPositiveFeedbackPercentage = () => {
+    const totalFeedbacksNumber = this.countTotalFeedback();
+    if (totalFeedbacksNumber === 0) {
+      return 0;
+    }
+    return Math.floor((this.state.good / totalFeedbacksNumber) * 100);
+  };
+
   render() {
     return (
       <div>
         <Feedback onIncrement={this.getFeedback} />
-        <Statistics clicks={this.state} total={this.countTotalFeedback()} />
+        <Statistics
+          clicks={this.state}
+          total={this.countTotalFeedback()}
+          positivePercentage={this.countPositiveFeedbackPercentage()}
+        />
       </div>
     );
   }

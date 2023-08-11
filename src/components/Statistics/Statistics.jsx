@@ -5,7 +5,7 @@ import {
   Clicks,
 } from './Statistics.styled';
 
-export const Statistics = ({ clicks, total }) => {
+export const Statistics = ({ clicks, total, positivePercentage }) => {
   const { good, neutral, bad } = clicks;
   return (
     <StatisticsWrapper>
@@ -28,7 +28,7 @@ export const Statistics = ({ clicks, total }) => {
       </StatisticsItem>
       <StatisticsItem>
         Positive feedback:
-        <Clicks></Clicks>
+        <Clicks>{positivePercentage}%</Clicks>
       </StatisticsItem>
     </StatisticsWrapper>
   );
