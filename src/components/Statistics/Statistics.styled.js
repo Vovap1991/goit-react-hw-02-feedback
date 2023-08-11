@@ -4,10 +4,6 @@ export const StatisticsWrapper = styled.div`
   margin-left: 50px;
 `;
 
-export const StatisticsTitle = styled.h2`
-  font-size: 40px;
-`;
-
 export const StatisticsItem = styled.p`
   font-size: 25px;
   margin-top: 10px;

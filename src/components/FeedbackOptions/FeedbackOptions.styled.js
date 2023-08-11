@@ -5,10 +5,6 @@ export const FeedbackWrapper = styled.div`
   margin-bottom: 50px;
 `;
 
-export const FeedbackTitle = styled.h2`
-  font-size: 40px;
-`;
-
 export const FeedbackBtn = styled.button`
   padding: 5px;
   width: 100px;

@@ -1,15 +1,14 @@
-import {
-  StatisticsWrapper,
-  StatisticsTitle,
-  StatisticsItem,
-  Clicks,
-} from './Statistics.styled';
+import { StatisticsWrapper, StatisticsItem, Clicks } from './Statistics.styled';
 
-export const Statistics = ({ clicks, total, positivePercentage }) => {
-  const { good, neutral, bad } = clicks;
+export const Statistics = ({
+  good,
+  neutral,
+  bad,
+  total,
+  positivePercentage,
+}) => {
   return (
     <StatisticsWrapper>
-      <StatisticsTitle>Statistics</StatisticsTitle>
       <StatisticsItem>
         Good:
         <Clicks>{good}</Clicks>
