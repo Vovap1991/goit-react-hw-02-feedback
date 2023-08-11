@@ -17,11 +17,16 @@ export class App extends Component {
     });
   };
 
+  countTotalFeedback = () => {
+    const { good, neutral, bad } = this.state;
+    return good + neutral + bad;
+  };
+
   render() {
     return (
       <div>
         <Feedback onIncrement={this.getFeedback} />
-        <Statistics clicks={this.state} />
+        <Statistics clicks={this.state} total={this.countTotalFeedback()} />
       </div>
     );
   }
