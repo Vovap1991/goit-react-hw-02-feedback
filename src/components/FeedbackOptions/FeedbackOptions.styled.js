@@ -17,4 +17,9 @@ export const FeedbackBtn = styled.button`
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.75) 3px 4px 8px -1px;
   font-size: 20px;
+  transition: background-color 300ms linear;
+
+  &:is(:focus, :hover) {
+    background-color: #e8d974;
+  }
 `;
